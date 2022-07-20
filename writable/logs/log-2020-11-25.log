@@ -1,0 +1,12 @@
+CRITICAL - 2020-11-25 03:28:01 --> Unknown database 'javawebmedia_cifour'
+#0 C:\xampp7\htdocs\cifour-master\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp7\htdocs\cifour-master\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp7\htdocs\cifour-master\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT `berita`...', Array, false)
+#3 C:\xampp7\htdocs\cifour-master\system\Model.php(1702): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp7\htdocs\cifour-master\app\Models\Berita_model.php(27): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp7\htdocs\cifour-master\app\Controllers\Home.php(15): App\Models\Berita_model->listing()
+#6 C:\xampp7\htdocs\cifour-master\system\CodeIgniter.php(910): App\Controllers\Home->index()
+#7 C:\xampp7\htdocs\cifour-master\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp7\htdocs\cifour-master\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\cifour-master\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
